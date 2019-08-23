@@ -183,7 +183,7 @@ template정의
 
    2. `makemigrations` (마이그레이션 파일 생성)
 
-   ```
+   ```bash
    $ python manage.py makemigrations
    Migrations for 'movies':
      movies\migrations\0001_initial.py
@@ -193,14 +193,14 @@ template정의
 
    3. `migrate` (DB반영)
 
-   ```
+   ```bash
    $ python manage.py migrate
    Operations to perform:
    ```
 
    
 
-2. 페이지
+2. **페이지**
 
    * base.html
 
