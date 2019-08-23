@@ -1,0 +1,51 @@
+{% extends 'movies/base.html' %}
+{% block body %}
+<h1 class="text-center">{{ movie.title }} 상세 보기</h1>
+<div>
+  <img src="{{ movie.poster_url }}" alt="{{ movie.title }}포스터" style="max-width:50%;height:auto;">
+  <table class="table mt-5">
+    <tr>
+      <td colspan="2">
+        {{ movie.title }}
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border-top:0px;">
+        {{ movie.title_en }}
+      </td>
+    </tr>
+    <tr>
+      <td width="20%">평점</td>
+      <td>{{ movie.score }}</td>
+    </tr>
+    <tr>
+      <td>누적관객수</td>
+      <td>{{ movie.audience }}</td>
+    </tr>
+    <tr>
+      <td>개봉일</td>
+      <td>{{ movie.open_date }}</td>
+    </tr>
+
+    <tr>
+      <td>장르</td>
+      <td>{{ movie.genre }}</td>
+    </tr>
+    <tr>
+      <td>관람등급</td>
+      <td>{{ movie.watch_grade }}</td>
+    </tr>
+    <tr>
+      <td colspan="2">줄거리</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="border-top:0px;">{{ movie.description }}</td>
+    </tr>
+  </table>
+</div>
+<div>
+    <a class="btn btn-primary" href="/movies/" role="button">목록</a>
+    <a class="btn btn-primary" href="/movies/{{ movie.pk }}/edit/" role="button">수정</a>
+    <a class="btn btn-primary" href="/movies/{{ movie.pk }}/delete/" role="button">삭제</a>
+</div>
+{% endblock %}
