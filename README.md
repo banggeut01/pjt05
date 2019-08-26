@@ -212,11 +212,11 @@ $ python manage.py runserver
      * 기본 템플릿
      *  웹사이트 내 모든 페이지에 확장되어 사용되는 가장 기본적인 템플릿
      
-```html
+     ```html
      <!DOCTYPE html>
-  <html lang="en">
+     <html lang="en">
      
-  <head>
+     <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -283,7 +283,7 @@ $ python manage.py runserver
       
         ```python
         from django.shortcuts import render
-     from .models import Movie
+        from .models import Movie
         
         # Create your views here.
         def index(request):
@@ -656,5 +656,5 @@ $ python manage.py runserver
 
    데이터베이스에 입력할 때, 일일히 값을 입력해주었지만
 
-   [data.csv][./data.csv] 파일을 사용해 손쉽게 입력할 수 있도록 해야합니다.
+   [data.csv](./data.csv) 파일을 사용해 손쉽게 입력할 수 있도록 해야합니다.
 
