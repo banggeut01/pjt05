@@ -258,6 +258,8 @@ $ python manage.py runserver
      </html>
      ```
    
+   
+   
    1. 영화목록
    
       * 페이지 접근 URL `/movies/ `입니다.
